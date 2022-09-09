@@ -41,9 +41,9 @@ if (response.Contains("good"))
 }
 
 Console.WriteLine("Please enter 1 or 2.");
-int userNumber = 0;
-if (int.TryParse(Console.ReadLine(), out userNumber)){
-    switch (userNumber)
+int number = 0;
+if (int.TryParse(Console.ReadLine(), out number)){
+    switch (number)
     {
         case 1:
             Console.WriteLine("One");
@@ -56,5 +56,16 @@ if (int.TryParse(Console.ReadLine(), out userNumber)){
             break;
     }
 }
+
+//What code am I going to need for the Homework assignment for user input
+// I want my user to give me a string value
+//Console.ReadLine(); 
+//example
+var userInput = Console.ReadLine();
+
+//I want my user to give me a number value
+//int.Parse(Console.ReadLine());
+//example
+var userNumber = int.Parse(Console.ReadLine());
 
 
